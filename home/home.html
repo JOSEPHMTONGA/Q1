@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sidebar Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <style>
+        *{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  max-width: 1600px;
+  margin: auto;
+  height: 700px;
+  background: rgba(240, 242, 243, 0.997);
+}
+.form-container {
+  font-size: 16px;
+  color: whitesmoke;
+  text-align: justify;
+  padding: 7%;
+  background-color: rgba(5, 68, 104, 0.997);
+  border-radius: 10px;
+  width: 60%;
+  margin-left: 14%;
+  margin-right: 13%;
+  margin-top: 8%;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 214px;
+  background: rgb(5, 68, 104);
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  display: block;
+}
+
+nav .top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(5, 68, 104);
+}
+
+nav .top img{
+  width: 90px;
+  border-radius: 25%;
+  border: 4px solid rgb(255, 255, 255);
+  margin: 10px;
+}
+
+nav .top h1{
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+nav .top p{
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+nav .top span.line{
+  display: block;
+  width: 205px;
+  height: 1px;
+  background: white;
+}
+
+nav .bot .nav-links a{
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+nav a span{
+  margin-left: 25px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #DCDCDC;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+input{
+  position: absolute;
+  margin-left: 22.5px;
+  margin-top: 22px;
+  transform: scale(2.1);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.navbar{
+  max-width: 100%;
+  min-height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(5, 68, 104);
+  margin-left: 214px;
+}
+
+.navbar .left .hamburger{
+  padding: 10px;
+}
+
+.navbar .left .hamburger span{
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 6.5px;
+}
+
+.navbar .right h1{
+  color: white;
+  padding: 10px;
+  font-family: Lucida Console, Monaco, monospace;
+}
+
+input{
+  margin-left: 237px;
+}
+
+input:checked ~ nav{
+  display: none;
+}
+
+input:checked ~ .navbar{
+  margin-left: 0px;
+}
+
+input:checked{
+  margin-left: 22.5px;
+}
+
+@media(max-width: 900px){
+  body{
+    overflow-y: scroll;
+  }
+
+  nav{
+    display: none;
+    width: 200px;
+  }
+
+  nav .top span.line{
+    width: 191px;
+  }
+
+  .navbar{
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  input{
+    opacity: 0;
+    margin-left: 22.5px;
+  }
+
+  input:checked{
+    margin-left: 222px;
+  }
+
+  input:checked ~ nav{
+    display: block;
+  }
+
+  input:checked ~ .navbar{
+    margin-left: 200px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <input type="checkbox"> <!-- terakhir -->
+    <nav>
+      <div class="top">
+        <img src="../image/aa.jpeg" alt="">
+        <h1>JOSEPH MTONGA</h1>
+        <p>Software Engineer</p>
+        <span class = "line"></span>
+      </div>
+      <div class="bot">
+        <div class="nav-links">
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-home"></i></span><span>Home</span></a></div>
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-question"></i></span><span>Help</span></a></div>
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-cogs"></i></span><span>Skills</span></a></div>
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-download"></i></span><span>Download CV</span></a></div>
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-envelope"></i></span><span>Contact</span></a></div>
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-info-circle"></i></span><span>About</span></a></div>
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-video"></i></span><span>Virtual Meet?</span></a></div>
+        </div>
+      </div>
+      
+    </nav>
+    <div class="navbar"> <!-- terakhir -->
+      <div class="left">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="right">
+        <h1>Portfolio Website</h1>
+      </div>
+    </div>
+
+
+
+    <div class="form-container">
+      <h2>THANK YOU FOR VISITING MY PORTFOLIO WEBSITE</h2><br><br>
+      <p1>Please browse more by clicking on either of the buttons on the left-hand side or go to the help page for more info.</p1>
+    </div>
+
+    
+  </body>
+</html>
+<!---   
+
+-->

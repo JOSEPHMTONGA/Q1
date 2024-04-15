@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  
+  *{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body{
+    background: #f5f6fa;
+  }
+  
+  .wrapper .sidebar{
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+      border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+  }
+  
+  .wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+  }
+  
+  .wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+  }
+.wrapper .sidebar ul li a .icon{
+	color: #f6f8f9;
+	width: 30px;
+	display: inline-block;
+}
+  .wrapper .sidebar ul li a:hover,
+  .wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+  
+    background:white;
+      border-right: 2px solid rgb(5, 68, 104);
+  }
+  
+  .wrapper .sidebar ul li a:hover .icon,
+  .wrapper .sidebar ul li a.active .icon{
+    color: #0c7db1;
+  }
+  
+  .wrapper .sidebar ul li a:hover:before,
+  .wrapper .sidebar ul li a.active:before{
+    display: block;
+  }
+  
+
+  
+  .wrapper .section .top_navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(5, 68, 104);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+  
+  .wrapper .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+  }
+  
+  .wrapper .section .top_navbar .hamburger a:hover{
+    color: #a2ecff;
+  }
+  
+   
+  
+  body.active .wrapper .sidebar{
+    left: -225px;
+  }
+  
+  body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+  }
+
+      h2{
+        text-align: center;
+  
+      }
+      p1{
+          text-align: justify;
+          font-style: italic;
+      }
+      </style>
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Get in touch with me</h3>
+          <p class="text">
+            Get in touch with me using the following details.
+            Or send a text to me on the right and send.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>17/030 Lubuto copperland</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>Josephmtonga981@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>+260 777 289 489</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with me on:</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact me</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+        </div>
+      </div>
+      <div class="wrapper">
+      <div class="section">
+          <div class="top_navbar">
+
+          </div>
+           
+      </div>
+      <div class="sidebar">
+          <div class="profile">
+              <img src="aa.jpeg" alt="profile_picture">
+              <h3>JOSEPH MTONGA</h3>
+              <p>Software Engineer</p>
+          </div>
+          <ul>
+              <li>
+                  <a href="home.html" class="active">
+                      <span class="icon"><i class="fas fa-home"></i></span>
+                      <span class="item">Home</span>
+                  </a>
+              </li>
+              <li>
+                  <a about: blank href="help.html">
+                      <span class="icon"><i class="fas fa-question-circle"></i></span>
+                      <span class="item">Help</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="Skills.html">
+                      <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                      <span class="item">Skills</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://drive.google.com/drive/folders/1cFbrQnb9VB4F6fNUKPel7WfTMd0yIxP6?usp=drive_link" target="blank">
+                      <span class="icon"><i class="fas fa-download"></i></span>
+                      <span class="item">Download CV</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="contact.html">
+                      <span class="icon"><i class="fas fa-phone"></i></span>
+                      <span class="item">Contact</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="about.html">
+                      <span class="icon"><i class="fas fa-info-circle"></i></span>
+                      <span class="item">About</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="VirtualMeeting.html">
+                      <span class="icon"><i class="fas fa-video"></i></span>
+                      <span class="item">Virtual meet?</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      
+    </div>
+  </body>
+</html>

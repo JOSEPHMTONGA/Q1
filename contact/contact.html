@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  max-width: 1600px;
+  margin: auto;
+  height: 700px;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 214px;
+  background: rgb(5, 68, 104);
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  display: block;
+}
+
+nav .top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(5, 68, 104);
+}
+
+nav .top img{
+  width: 90px;
+  border-radius: 25%;
+  border: 2px solid white;
+  margin: 10px;
+}
+
+nav .top h1{
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+nav .top p{
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+nav .top span.line{
+  display: block;
+  width: 205px;
+  height: 1px;
+  background: white;
+}
+
+nav .bot .nav-links a{
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+nav a span{
+  margin-left: 25px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #DCDCDC;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.input1 {
+      position: absolute;
+      margin-left: 22.5px;
+      margin-top: 22px;
+      transform: scale(2.1);
+      opacity: 0;
+      cursor: pointer;
+      z-index: 1; /* Add this line to set the z-index */
+    }
+
+.navbar{
+  max-width: 100%;
+  min-height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(5, 68, 104);
+  margin-left: 214px;
+}
+
+.navbar .left .hamburger{
+  padding: 20px;
+  cursor: pointer;
+}
+
+.navbar .left .hamburger span{
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 6.5px;
+}
+
+.navbar .right h1{
+  color: white;
+  padding: 10px;
+  font-family: Lucida Console, Monaco, monospace;
+}
+
+.input1{
+  margin-left: 237px;
+}
+
+.input1:checked ~ nav{
+  display: none;
+}
+
+.input1:checked ~ .navbar{
+  margin-left: 0px;
+}
+
+.input1:checked{
+  margin-left: 22.5px;
+}
+
+@media(max-width: 900px){
+  body{
+    overflow-y: scroll;
+  }
+
+  nav{
+    display: none;
+    width: 200px;
+  }
+
+  nav .top span.line{
+    width: 191px;
+  }
+
+  .navbar{
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .input1{
+    opacity: 0;
+    margin-left: 22.5px;
+  }
+
+  .input1:checked{
+    margin-left: 222px;
+  }
+
+  .input1:checked ~ nav{
+    display: block;
+  }
+
+  .input1:checked ~ .navbar{
+    margin-left: 200px;
+  }
+}
+    </style>
+
+
+</head>
+<body>
+
+  <div class="input1">
+    <input type="checkbox" id="toggleNav">
+  </div>
+    <nav>
+      <div class="top">
+        <img src="../image/aa.jpeg" alt="">
+        <h1>JOSEPH MTONGA</h1>
+        <p>Software Engineer</p>
+        <span class = "line"></span>
+      </div>
+      <div class="bot">
+        <div class="nav-links">
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-home"></i></span><span>Home</span></a></div>
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-question"></i></span><span>Help</span></a></div>
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-cogs"></i></span><span>Skills</span></a></div>
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-download"></i></span><span>Download CV</span></a></div>
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-envelope"></i></span><span>Contact</span></a></div>
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-info-circle"></i></span><span>About</span></a></div>
+          <div class="nav-link-wrapper"><a href=""><span class="icon"><i class="fas fa-video"></i></span><span>Virtual Meet?</span></a></div>
+        </div>
+      </div>
+      
+    </nav>
+    <div class="navbar"> <!-- terakhir -->
+      <div class="left">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="right">
+        <h1>Portfolio Website</h1>
+      </div>
+    </div>
+    <section id="section-wrapper">
+        <div class="box-wrapper">
+            <div class="info-wrap">
+                <h2 class="info-title">Contact Information</h2>
+                <h3 class="info-sub-title">Fill up the form and I will get back to you within 24 hours. <i>Note:</i> The latest is within 48 hours.</h3>
+                <ul class="info-details">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Phone:</span> <a href="tel:+ 1235 2355 98">+ 1235 2355 98</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <span>Website:</span> <a href="#">yoursite.com</a>
+                    </li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="form-wrap">
+                <form action="#" method="POST">
+                    <h2 class="form-title">Send us a message</h2>
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input type="text" class="First name" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="Last name" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="Email" placeholder="Mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="Phone number" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message"rows="5" cols="40" id="" placeholder="Write your message here"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send Message" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+      const toggleNav = document.getElementById('toggleNav');
+      const nav = document.querySelector('nav');
+      const navbar = document.querySelector('.navbar');
+  
+      toggleNav.addEventListener('change', function() {
+        if (this.checked) {
+          nav.style.display = 'block';
+          navbar.style.marginLeft = '214px';
+        } else {
+          nav.style.display = 'none';
+          navbar.style.marginLeft = '0';
+        }
+      });
+    </script>
+
+    </body>
+</body>
+</html>

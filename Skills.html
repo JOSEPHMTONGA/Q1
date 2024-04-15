@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mtonglish</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+    
+}
+.wrapper .sidebar{
+	background: rgb(5, 68, 104);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 225px;
+	height: 100%;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+	display: block;
+	width: 100px;
+	height: 100px;
+    border-radius: 50%;
+	margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+	color: #ffffff;
+	margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+	color: rgb(206, 240, 253);
+	font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+	display: block;
+	padding: 13px 30px;
+	border-bottom: 1px solid #10558d;
+	color: rgb(241, 237, 237);
+	font-size: 16px;
+	position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+	color: #dee4ec;
+	width: 30px;
+	display: inline-block;
+}
+
+ 
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+	color: #0c7db1;
+
+	background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+	color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+	display: block;
+}
+
+.wrapper .section{
+	width: calc(100% - 225px);
+	margin-left: 225px;
+	transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(5, 68, 104);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.wrapper .section .top_navbar .hamburger a{
+	font-size: 28px;
+	color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+	color: #a2ecff;
+}
+
+ 
+
+body.active .wrapper .sidebar{
+	left: -225px;
+}
+
+body.active .wrapper .section{
+	margin-left: 0;
+	width: 100%;
+}
+
+.form-container {      
+      font-size: 26px;
+      text-align: center;
+      padding: 10%;
+      background-color: rgba(5, 68, 104, 0.59);
+      border-radius: 10px;
+      width: 60%;
+      margin-left: 27%;
+      margin-right: 40%;
+      margin-top: 8%;
+      
+    }
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgb(248, 247, 252)
+    }
+    p1{
+        font-weight: bold;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgb(248, 247, 252)
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    </style>
+</head>
+<body>
+   
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+
+            </div>
+             
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <img src="aa.jpeg" alt="profile_picture">
+                <h3>JOSEPH MTONGA</h3>
+                <p>Software Engineer</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="home.html" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a about: blank href="help.html">
+                        <span class="icon"><i class="fas fa-question-circle"></i></span>
+                        <span class="item">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Skills.html">
+                        <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                        <span class="item">Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/drive/folders/1cFbrQnb9VB4F6fNUKPel7WfTMd0yIxP6?usp=drive_link" target="blank">
+                        <span class="icon"><i class="fas fa-download"></i></span>
+                        <span class="item">Download CV</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <span class="icon"><i class="fas fa-phone"></i></span>
+                        <span class="item">Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <span class="icon"><i class="fas fa-info-circle"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="VirtualMeeting.html">
+                        <span class="icon"><i class="fas fa-video"></i></span>
+                        <span class="item">Virtual meet?</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    
+    <form>
+        <div class="skills_section">
+            <div class="skills_head">
+                <h2><span>HERE ARE MY SKILLS TO REPRESENT MY EXPERTISE</span></h2>
+            </div>
+    
+            <div class="skills_main">
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <P>80%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <P>70%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>DATABASE</p>
+                        <P>70%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="sass"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>JAVASCRIPT</p>
+                        <P>60%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="js"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>WEB DESIGNING</p>
+                        <P>58%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="react"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>MOBLE APP DESIGNING</p>
+                        <P>58%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="node"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>C++</p>
+                        <P>65%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="express"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>GRAPHIC DESIGNING</p>
+                        <P>60%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="mongo"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+</body>
+</html>

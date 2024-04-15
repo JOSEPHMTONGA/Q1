@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mtonglish</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+    
+}
+
+  body {
+      background-color: #e9e9e9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-top: 10%;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.551);
+    }
+    h1{
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: rgb(9, 89, 135);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="time"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: rgb(5, 68, 104);
+      color: white;
+      padding: 10px 20px;
+      font-weight: bolder;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #08460bca;
+    }
+
+
+
+.wrapper .sidebar{
+	background: rgb(5, 68, 104);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 225px;
+	height: 100%;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+	display: block;
+	width: 100px;
+	height: 100px;
+    border-radius: 50%;
+	margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+	color: #ffffff;
+	margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+	color: rgb(206, 240, 253);
+	font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+	display: block;
+	padding: 13px 30px;
+	border-bottom: 1px solid #10558d;
+	color: rgb(241, 237, 237);
+	font-size: 16px;
+	position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+	color: #dee4ec;
+	width: 30px;
+	display: inline-block;
+}
+
+ 
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+	color: #0c7db1;
+
+	background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+	color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+	display: block;
+}
+
+.wrapper .section{
+	width: calc(100% - 225px);
+	margin-left: 225px;
+	transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(5, 68, 104);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.wrapper .section .top_navbar .hamburger a{
+	font-size: 28px;
+	color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+	color: #a2ecff;
+}
+
+ 
+
+body.active .wrapper .sidebar{
+	left: -225px;
+}
+
+body.active .wrapper .section{
+	margin-left: 0;
+	width: 100%;
+}
+
+.form-container {      
+      font-size: 26px;
+      text-align: center;
+      padding: 10%;
+      background-color: rgba(5, 68, 104, 0.59);
+      border-radius: 10px;
+      width: 60%;
+      margin-left: 27%;
+      margin-right: 40%;
+      margin-top: 8%;
+      
+    }
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgb(248, 247, 252)
+    }
+    p1{
+        font-weight: bold;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgb(248, 247, 252)
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    </style>
+</head>
+<body>
+   
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+
+            </div>
+             
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <img src="aa.jpeg" alt="profile_picture">
+                <h3>JOSEPH MTONGA</h3>
+                <p>Software Engineer</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="home.html" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a about: blank href="help.html">
+                        <span class="icon"><i class="fas fa-question-circle"></i></span>
+                        <span class="item">Help</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Skills.html">
+                        <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                        <span class="item">Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/drive/folders/1cFbrQnb9VB4F6fNUKPel7WfTMd0yIxP6?usp=drive_link" target="blank">
+                        <span class="icon"><i class="fas fa-download"></i></span>
+                        <span class="item">Download CV</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <span class="icon"><i class="fas fa-phone"></i></span>
+                        <span class="item">Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <span class="icon"><i class="fas fa-info-circle"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="VirtualMeeting.html">
+                        <span class="icon"><i class="fas fa-video"></i></span>
+                        <span class="item">Virtual meet?</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    
+ <form method>
+    <h1>ENTRER YOUR DETAILS TO CONTINUE YOUR<br>REQUEST</h1>
+    <label for="first-name">Full Name:</label>
+    <input type="text" id="first-name" name="first-name" required><br>
+    
+    <label for="phone-number">Phone Number:</label>
+    <input type="tel" id="phone-number" name="phone-number" required><br>
+    
+    <label for="nrc">NRC:</label>
+    <input type="text" id="nrc" name="nrc" required><br>
+    
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="organization-name">Organization Name:</label>
+    <input type="text" id="organization-name" name="organization-name" required><br>
+    
+    <label for="last-name">Position:</label>
+    <input type="text" id="last-name" name="last-name" required><br>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+    
+    <input type="submit" value="Send request">
+  </form>
+</body>
+</html>

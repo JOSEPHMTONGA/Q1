@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mtonglish</title>
+    <link rel="stylesheet" href="CSS/about.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background: #f5f6fa;
+}
+
+.wrapper .sidebar{
+	background: rgb(5, 68, 104);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 225px;
+	height: 100%;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+	display: block;
+	width: 100px;
+	height: 100px;
+    border-radius: 50%;
+	margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+	color: #ffffff;
+	margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+	color: rgb(206, 240, 253);
+	font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+	display: block;
+	padding: 13px 30px;
+	border-bottom: 1px solid #10558d;
+	color: rgb(241, 237, 237);
+	font-size: 16px;
+	position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+	color: #dee4ec;
+	width: 30px;
+	display: inline-block;
+}
+
+ 
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+	color: #0c7db1;
+
+	background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+	color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+	display: block;
+}
+
+.wrapper .section{
+	width: calc(100% - 225px);
+	margin-left: 225px;
+	transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(5, 68, 104);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.wrapper .section .top_navbar .hamburger a{
+	font-size: 28px;
+	color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+	color: #a2ecff;
+}
+
+ 
+
+body.active .wrapper .sidebar{
+	left: -225px;
+}
+
+body.active .wrapper .section{
+	margin-left: 0;
+	width: 100%;
+}
+form {
+      
+      font-size: 20px;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 10%;
+      border: 10px solid #284fe9;
+      border-radius: 10px;
+      background-color: #bdb4f0;
+      width: 70%;
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-top: -7%;
+      text-align: justify;
+    }
+
+.form-container {
+      
+      font-size: 20px;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 7%;
+      border: 2px solid #284fe9;
+      border-radius: 1px;
+      background-color: #e0ddf1;
+      width: 86%;
+      margin-left: 14%;
+      margin-right: 40%;
+      margin-top: 2%;
+    }
+    h2{
+      text-align: center;
+
+    }
+    p1{
+        text-align: justify;
+        font-style: italic;
+    }
+    </style>
+</head>
+<body>
+   
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+
+            </div>
+             
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <img src="aa.jpeg" alt="profile_picture">
+                <h3>JOSEPH MTONGA</h3>
+                <p>Software Engineer</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="home.html" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a about: blank href="help.html">
+                        <span class="icon"><i class="fas fa-question-circle"></i></span>
+                        <span class="item">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Skills.html">
+                        <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                        <span class="item">Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/drive/folders/1cFbrQnb9VB4F6fNUKPel7WfTMd0yIxP6?usp=drive_link" target="blank">
+                        <span class="icon"><i class="fas fa-download"></i></span>
+                        <span class="item">Download CV</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <span class="icon"><i class="fas fa-phone"></i></span>
+                        <span class="item">Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <span class="icon"><i class="fas fa-info-circle"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="VirtualMeeting.html">
+                        <span class="icon"><i class="fas fa-video"></i></span>
+                        <span class="item">Virtual meet?</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <section id="about-section">
+        <!-- about left  -->
+        <div class="about-left">
+            <img src="img/e.jpg" alt="About Img"/>
+        </div>
+
+        <!-- about right  -->
+        <div class="about-right">
+            <h1>ABOUT ME</h1>
+            <p>My is <b>Joseph Mtonga,</b> a third-year student pursuing a Bachelor's degree in Software Engineering at Zambia 
+                University College of Technology located in Ndola, Zambia. As a resident of Lubuto Copperland, I resides in a 
+                specific residential area within the city. Being a software engineering student entails studying and 
+                applying principles and techniques related to the <b>design, development, and maintenance of software systems. 
+                This includes acquiring knowledge and skills in programming languages, algorithms, data structures, software 
+                testing, and software project management</b>. My academic pursuits involve a combination of theoretical 
+                coursework, practical laboratory sessions, and potentially internships or projects to gain hands-on experience. 
+                Through my studies, I aim to develop a strong foundation in software engineering principles and contribute 
+                to the advancement of technology in Zambia and beyond.
+            </p>
+            <div class="address">
+                <ul>
+                    <li>
+                        <span class="address-logo">
+                            <i class="fas fa-paper-plane"></i>
+                        </span>
+                        <p>Address</p>
+                        <span class="saprater">:</span>
+                        <p>17/030 Lubuto copperland, Ndola, Zambia</p>
+                    </li>
+                    <li>
+                        <span class="address-logo">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        <p>Phone &nbsp;&nbsp;</p>
+                        <span class="saprater">:</span>
+                        <p>+260 77 7289489</p>
+                    </li>
+                    <li>
+                        <span class="address-logo">
+                            <i class="far fa-envelope"></i>
+                        </span>
+                        <p>Email ID&nbsp;</p>
+                        <span class="saprater">:</span>
+                        <p>mtongajoseph981@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    </body>
+    </html>
